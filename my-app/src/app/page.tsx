@@ -1,9 +1,23 @@
-import Image from "next/image";
+import React from "react";
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>HOMEPAGE</h1>
-    </main>
+    <div
+      className="bg-cover bg-center h-screen flex flex-col items-center justify-center"
+      style={{
+        backgroundImage: "url('/images/b1.jpg')",  // Adjusted path to the image
+      }}
+    >
+      <div className="flex flex-col items-center justify-center text-white">
+        <h1 className="text-4xl font-bold mb-6">Welcome to Your Homepage</h1>
+        <p className="text-lg">Some introductory text here.</p>
+      </div>
+      {/* Optional: Add additional content below */}
+      <div className="mt-12">
+        <p className="text-lg text-white">Additional content...</p>
+      </div>
+    </div>
   );
-}
+};
+
+export default Home;
