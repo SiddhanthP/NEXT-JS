@@ -92,7 +92,7 @@ const Login = () => {
           <div className="text-center text-gray-500 mt-4">- OR -</div>
           <Link
             className="block text-center text-blue-500 hover:underline mt-2"
-            href="/register"
+            href="/signup"
           >
             Register Here
           </Link>
